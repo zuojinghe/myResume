@@ -253,85 +253,8 @@ html, body {
     animation-duration: 1.5s;
 }
 
-@-webkit-keyframes myMove {
-    25% {
-        top: -20%;
-    }
-    50%, 100% {
-        top: 0;
-    }
-    75% {
-        top: 10%;
-    }
-}
 
-@keyframes myMove {
-    25% {
-        top: -20%;
-    }
-    50%, 100% {
-        top: 0;
-    }
-    75% {
-        top: 10%;
-    }
-}
 
-@-webkit-keyframes swing {
-    20% {
-        -webkit-transform: rotate3d(0, 0, 1, 30deg);
-        transform: rotate3d(0, 0, 1, 30deg);
-        opacity: 0.1;
-    }
-    40% {
-        -webkit-transform: rotate3d(0, 0, 1, -30deg);
-        transform: rotate3d(0, 0, 1, -30deg);
-        opacity: 0.8;
-    }
-    60% {
-        -webkit-transform: rotate3d(0, 0, 1, 15deg);
-        transform: rotate3d(0, 0, 1, 15deg);
-        opacity: 0.3;
-    }
-    80% {
-        -webkit-transform: rotate3d(0, 0, 1, -15deg);
-        transform: rotate3d(0, 0, 1, -15deg);
-        opacity: 0.5;
-    }
-    100% {
-        -webkit-transform: rotate3d(0, 0, 1, 0deg);
-        transform: rotate3d(0, 0, 1, 0deg);
-        opacity: 0.8;
-    }
-}
-
-@keyframes swing {
-    20% {
-        -webkit-transform: rotate3d(0, 0, 1, 30deg);
-        transform: rotate3d(0, 0, 1, 30deg);
-        opacity: 0.1;
-    }
-    40% {
-        -webkit-transform: rotate3d(0, 0, 1, -30deg);
-        transform: rotate3d(0, 0, 1, -30deg);
-        opacity: 0.8;
-    }
-    60% {
-        -webkit-transform: rotate3d(0, 0, 1, 15deg);
-        transform: rotate3d(0, 0, 1, 15deg);
-        opacity: 0.3;
-    }
-    80% {
-        -webkit-transform: rotate3d(0, 0, 1, -15deg);
-        transform: rotate3d(0, 0, 1, -15deg);
-        opacity: 0.5;
-    }
-    100% {
-        -webkit-transform: rotate3d(0, 0, 1, 0deg);
-        transform: rotate3d(0, 0, 1, 0deg);
-        opacity: 0.8;
-    }
-}
 
 .a2-top p {
     padding-top: 10%;
@@ -344,8 +267,8 @@ html, body {
 }
 
 #a2 .a2-top img {
-    -webkit-animation-delay: 0.2s;
-    animation-delay: 0.2s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
 }
 
 #a2 .a2-top img:nth-of-type(1) {
@@ -390,23 +313,7 @@ html, body {
     animation-iteration-count: infinite;
 }
 
-@-webkit-keyframes myBg {
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 
-@keyframes myBg {
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 
 /*出现前*/
 #a2 .a2-bot div img {
@@ -457,6 +364,84 @@ html, body {
     letter-spacing: 2px;
     color: blue;
 }
+.a2 .divp p {
+    -webkit-animation-name: divp;
+    animation-name: divp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes divp {
+    25% {
+        left: -75%;
+    }
+    50%, 100% {
+        left: 0;
+    }
+    75% {
+        left: 75%;
+    }
+}
+
+@-webkit-keyframes divp {
+    25% {
+        left: -75%;
+    }
+    50%, 100% {
+        left: 0;
+    }
+    75% {
+        left: 75%;
+    }
+}
+
+.a2 .divp  p:nth-of-type(1) {
+    top: 0;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.a2 .divp  p:nth-of-type(2) {
+    top: 13%;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.a2 .divp  p:nth-of-type(3) {
+    top: 26%;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.a2 .divp  p:nth-of-type(4) {
+    top: 39%;
+    -webkit-animation-delay: 0.8s;
+    transition-delay: 0.8s;
+}
+
+.a2 .divp  p:nth-of-type(5) {
+    top: 52%;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.a2 .divp  p:nth-of-type(6) {
+    top: 65%;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+.a2 .divp  p:nth-of-type(7) {
+    top: 78%;
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+
+
 
 /*-------------------第三张----------------------*/
 .a3-top {
